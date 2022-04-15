@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsClase2.Service1 {
+namespace WindowsFormClase2.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Service1.WebService1Soap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.WebService1Soap")]
     public interface WebService1Soap {
         
         // CODEGEN: Generating message contract since element name dni from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CUILValidator", ReplyAction="*")]
-        WindowsFormsClase2.Service1.CUILValidatorResponse CUILValidator(WindowsFormsClase2.Service1.CUILValidatorRequest request);
+        WindowsFormClase2.ServiceReference1.CUILValidatorResponse CUILValidator(WindowsFormClase2.ServiceReference1.CUILValidatorRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CUILValidator", ReplyAction="*")]
-        System.Threading.Tasks.Task<WindowsFormsClase2.Service1.CUILValidatorResponse> CUILValidatorAsync(WindowsFormsClase2.Service1.CUILValidatorRequest request);
+        System.Threading.Tasks.Task<WindowsFormClase2.ServiceReference1.CUILValidatorResponse> CUILValidatorAsync(WindowsFormClase2.ServiceReference1.CUILValidatorRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace WindowsFormsClase2.Service1 {
     public partial class CUILValidatorRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CUILValidator", Namespace="http://tempuri.org/", Order=0)]
-        public WindowsFormsClase2.Service1.CUILValidatorRequestBody Body;
+        public WindowsFormClase2.ServiceReference1.CUILValidatorRequestBody Body;
         
         public CUILValidatorRequest() {
         }
         
-        public CUILValidatorRequest(WindowsFormsClase2.Service1.CUILValidatorRequestBody Body) {
+        public CUILValidatorRequest(WindowsFormClase2.ServiceReference1.CUILValidatorRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -72,12 +72,12 @@ namespace WindowsFormsClase2.Service1 {
     public partial class CUILValidatorResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="CUILValidatorResponse", Namespace="http://tempuri.org/", Order=0)]
-        public WindowsFormsClase2.Service1.CUILValidatorResponseBody Body;
+        public WindowsFormClase2.ServiceReference1.CUILValidatorResponseBody Body;
         
         public CUILValidatorResponse() {
         }
         
-        public CUILValidatorResponse(WindowsFormsClase2.Service1.CUILValidatorResponseBody Body) {
+        public CUILValidatorResponse(WindowsFormClase2.ServiceReference1.CUILValidatorResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -100,12 +100,12 @@ namespace WindowsFormsClase2.Service1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WebService1SoapChannel : WindowsFormsClase2.Service1.WebService1Soap, System.ServiceModel.IClientChannel {
+    public interface WebService1SoapChannel : WindowsFormClase2.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<WindowsFormsClase2.Service1.WebService1Soap>, WindowsFormsClase2.Service1.WebService1Soap {
+    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<WindowsFormClase2.ServiceReference1.WebService1Soap>, WindowsFormClase2.ServiceReference1.WebService1Soap {
         
         public WebService1SoapClient() {
         }
@@ -127,32 +127,32 @@ namespace WindowsFormsClase2.Service1 {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WindowsFormsClase2.Service1.CUILValidatorResponse WindowsFormsClase2.Service1.WebService1Soap.CUILValidator(WindowsFormsClase2.Service1.CUILValidatorRequest request) {
+        WindowsFormClase2.ServiceReference1.CUILValidatorResponse WindowsFormClase2.ServiceReference1.WebService1Soap.CUILValidator(WindowsFormClase2.ServiceReference1.CUILValidatorRequest request) {
             return base.Channel.CUILValidator(request);
         }
         
         public bool CUILValidator(int tipo, string dni, int verificador) {
-            WindowsFormsClase2.Service1.CUILValidatorRequest inValue = new WindowsFormsClase2.Service1.CUILValidatorRequest();
-            inValue.Body = new WindowsFormsClase2.Service1.CUILValidatorRequestBody();
+            WindowsFormClase2.ServiceReference1.CUILValidatorRequest inValue = new WindowsFormClase2.ServiceReference1.CUILValidatorRequest();
+            inValue.Body = new WindowsFormClase2.ServiceReference1.CUILValidatorRequestBody();
             inValue.Body.tipo = tipo;
             inValue.Body.dni = dni;
             inValue.Body.verificador = verificador;
-            WindowsFormsClase2.Service1.CUILValidatorResponse retVal = ((WindowsFormsClase2.Service1.WebService1Soap)(this)).CUILValidator(inValue);
+            WindowsFormClase2.ServiceReference1.CUILValidatorResponse retVal = ((WindowsFormClase2.ServiceReference1.WebService1Soap)(this)).CUILValidator(inValue);
             return retVal.Body.CUILValidatorResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WindowsFormsClase2.Service1.CUILValidatorResponse> WindowsFormsClase2.Service1.WebService1Soap.CUILValidatorAsync(WindowsFormsClase2.Service1.CUILValidatorRequest request) {
+        System.Threading.Tasks.Task<WindowsFormClase2.ServiceReference1.CUILValidatorResponse> WindowsFormClase2.ServiceReference1.WebService1Soap.CUILValidatorAsync(WindowsFormClase2.ServiceReference1.CUILValidatorRequest request) {
             return base.Channel.CUILValidatorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WindowsFormsClase2.Service1.CUILValidatorResponse> CUILValidatorAsync(int tipo, string dni, int verificador) {
-            WindowsFormsClase2.Service1.CUILValidatorRequest inValue = new WindowsFormsClase2.Service1.CUILValidatorRequest();
-            inValue.Body = new WindowsFormsClase2.Service1.CUILValidatorRequestBody();
+        public System.Threading.Tasks.Task<WindowsFormClase2.ServiceReference1.CUILValidatorResponse> CUILValidatorAsync(int tipo, string dni, int verificador) {
+            WindowsFormClase2.ServiceReference1.CUILValidatorRequest inValue = new WindowsFormClase2.ServiceReference1.CUILValidatorRequest();
+            inValue.Body = new WindowsFormClase2.ServiceReference1.CUILValidatorRequestBody();
             inValue.Body.tipo = tipo;
             inValue.Body.dni = dni;
             inValue.Body.verificador = verificador;
-            return ((WindowsFormsClase2.Service1.WebService1Soap)(this)).CUILValidatorAsync(inValue);
+            return ((WindowsFormClase2.ServiceReference1.WebService1Soap)(this)).CUILValidatorAsync(inValue);
         }
     }
 }

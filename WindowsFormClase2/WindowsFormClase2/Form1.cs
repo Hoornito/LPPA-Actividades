@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsClase2
+namespace WindowsFormClase2
 {
     public partial class Form1 : Form
     {
@@ -19,7 +19,7 @@ namespace WindowsFormsClase2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var client = new Service1.WebService1SoapClient();
+            var client = new ServiceReference1.WebService1SoapClient();
 
             var result = client.CUILValidator(Convert.ToInt32(Tipo_txtBox.Text), DNI_txtBox.Text, Convert.ToInt32(DV_txtBox.Text));
 

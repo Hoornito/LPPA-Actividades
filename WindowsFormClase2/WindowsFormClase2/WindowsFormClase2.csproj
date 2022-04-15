@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A26B933F-F7D3-47EB-ADD5-7CD557A4DF83}</ProjectGuid>
+    <ProjectGuid>{D2C3D681-406B-4EC7-B302-6B479053D615}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsClase2</RootNamespace>
-    <AssemblyName>WindowsFormsClase2</AssemblyName>
+    <RootNamespace>WindowsFormClase2</RootNamespace>
+    <AssemblyName>WindowsFormClase2</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -51,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\Service1\Reference.cs">
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -76,11 +73,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\Service1\WebService1.wsdl" />
-    <None Include="Connected Services\Service1\WindowsFormsClase2.Service1.CUILValidatorResponse.datasource">
+    <None Include="Connected Services\ServiceReference1\WebService1.wsdl" />
+    <None Include="Connected Services\ServiceReference1\WindowsFormClase2.ServiceReference1.CUILValidatorResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -98,19 +94,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Service1\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service1\WebService1.disco" />
+    <None Include="Connected Services\ServiceReference1\WebService1.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service1\Reference.svcmap">
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
