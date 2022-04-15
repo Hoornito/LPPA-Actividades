@@ -80,6 +80,7 @@
             // DNI_txtBox
             // 
             this.DNI_txtBox.Location = new System.Drawing.Point(143, 57);
+            this.DNI_txtBox.MaxLength = 8;
             this.DNI_txtBox.Name = "DNI_txtBox";
             this.DNI_txtBox.Size = new System.Drawing.Size(100, 20);
             this.DNI_txtBox.TabIndex = 2;
@@ -87,6 +88,7 @@
             // Tipo_txtBox
             // 
             this.Tipo_txtBox.Location = new System.Drawing.Point(107, 57);
+            this.Tipo_txtBox.MaxLength = 2;
             this.Tipo_txtBox.Name = "Tipo_txtBox";
             this.Tipo_txtBox.Size = new System.Drawing.Size(25, 20);
             this.Tipo_txtBox.TabIndex = 1;
@@ -94,6 +96,7 @@
             // DV_txtBox
             // 
             this.DV_txtBox.Location = new System.Drawing.Point(255, 57);
+            this.DV_txtBox.MaxLength = 1;
             this.DV_txtBox.Name = "DV_txtBox";
             this.DV_txtBox.Size = new System.Drawing.Size(25, 20);
             this.DV_txtBox.TabIndex = 3;
