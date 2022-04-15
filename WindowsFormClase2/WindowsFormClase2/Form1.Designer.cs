@@ -28,38 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DV_txtBox = new System.Windows.Forms.TextBox();
-            this.Tipo_txtBox = new System.Windows.Forms.TextBox();
-            this.DNI_txtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.DNI_txtBox = new System.Windows.Forms.TextBox();
+            this.Tipo_txtBox = new System.Windows.Forms.TextBox();
+            this.DV_txtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // DV_txtBox
-            // 
-            this.DV_txtBox.Location = new System.Drawing.Point(255, 57);
-            this.DV_txtBox.MaxLength = 1;
-            this.DV_txtBox.Name = "DV_txtBox";
-            this.DV_txtBox.Size = new System.Drawing.Size(25, 20);
-            this.DV_txtBox.TabIndex = 7;
-            // 
-            // Tipo_txtBox
-            // 
-            this.Tipo_txtBox.Location = new System.Drawing.Point(107, 57);
-            this.Tipo_txtBox.MaxLength = 2;
-            this.Tipo_txtBox.Name = "Tipo_txtBox";
-            this.Tipo_txtBox.Size = new System.Drawing.Size(25, 20);
-            this.Tipo_txtBox.TabIndex = 4;
-            // 
-            // DNI_txtBox
-            // 
-            this.DNI_txtBox.Location = new System.Drawing.Point(143, 57);
-            this.DNI_txtBox.MaxLength = 8;
-            this.DNI_txtBox.Name = "DNI_txtBox";
-            this.DNI_txtBox.Size = new System.Drawing.Size(100, 20);
-            this.DNI_txtBox.TabIndex = 5;
             // 
             // label3
             // 
@@ -96,10 +72,31 @@
             this.button1.Location = new System.Drawing.Point(152, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Validar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // DNI_txtBox
+            // 
+            this.DNI_txtBox.Location = new System.Drawing.Point(143, 57);
+            this.DNI_txtBox.Name = "DNI_txtBox";
+            this.DNI_txtBox.Size = new System.Drawing.Size(100, 20);
+            this.DNI_txtBox.TabIndex = 2;
+            // 
+            // Tipo_txtBox
+            // 
+            this.Tipo_txtBox.Location = new System.Drawing.Point(107, 57);
+            this.Tipo_txtBox.Name = "Tipo_txtBox";
+            this.Tipo_txtBox.Size = new System.Drawing.Size(25, 20);
+            this.Tipo_txtBox.TabIndex = 1;
+            // 
+            // DV_txtBox
+            // 
+            this.DV_txtBox.Location = new System.Drawing.Point(255, 57);
+            this.DV_txtBox.Name = "DV_txtBox";
+            this.DV_txtBox.Size = new System.Drawing.Size(25, 20);
+            this.DV_txtBox.TabIndex = 3;
             // 
             // Form1
             // 
@@ -123,14 +120,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox DV_txtBox;
-        private System.Windows.Forms.TextBox Tipo_txtBox;
-        private System.Windows.Forms.TextBox DNI_txtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox DNI_txtBox;
+        private System.Windows.Forms.TextBox Tipo_txtBox;
+        private System.Windows.Forms.TextBox DV_txtBox;
     }
 }
 
