@@ -41,8 +41,13 @@ namespace WebApplicationClase2
 
             z = suma % 11;
             int resultado = 11 - z;
-            resultadoVerificador = (resultado == verificador);
-            
+            resultadoVerificador = (z == 0) ? (z == verificador) : (resultado == verificador);
+
+            //if (z == 0)
+            //    resultadoVerificador = (z == verificador);
+            //else
+            //    resultadoVerificador = (resultado == verificador);
+
             return resultadoVerificador;
         }
     }
