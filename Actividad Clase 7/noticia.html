@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth, initial-scale=1.0">
+    <title>EU rushes out $300 billion roadmap to ditch Russian energy | AP News</title>
+    <link rel="stylesheet" type="text/css" href="style 2.css">
+    <script>
+        function toggleMenu() {
+            document.getElementById("1").classList.toggle("is-active");
+            document.getElementById("mydropdown").classList.toggle("show");
+            document.getElementById("mydropdown2").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.hamburger')) {
+                var dropdowns = document.getElementsByClassName("dropdown-0-2-7 dropdown");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }
+        function toggleSearch(){
+            if(document.getElementById("search").classList.contains("open")){
+                document.getElementById("search").classList.remove("open");
+                document.getElementById("search").classList.add("close");
+            }
+            else{
+            document.getElementById("search").classList.remove("close");
+            document.getElementById("search").classList.add("open");
+            }
+        }
+    </script>
+    <script>
+        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+        window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+        var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (st > 0){
+            document.getElementById("scroll1").classList.add("-scrolled", "-nopadding")
+            document.getElementById("scroll2").classList.add("-scrolled")
+            document.getElementById("scroll3").classList.add("-scrolled", "-nopadding")
+        } else {
+            document.getElementById("scroll1").classList.remove("-scrolled", "-nopadding")
+            document.getElementById("scroll2").classList.remove("-scrolled")
+            document.getElementById("scroll3").classList.remove("-scrolled", "-nopadding")
+        }
+        }, false);
+        // $(window).scroll(function() {
+        //     if ($(window).scrollTop() === 0) {
+        //         // We are at the top of the page and want to remove the class
+        //         $('#scroll').remove('-scrolled', '-nopadding');
+        //     } else {
+        //         $('#scroll').add('-scrolled', '-nopadding');
+        //     }
+        // });
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <div class="App">
+            <main class="Main">
+                <div class="Header">
+                    <div class="Header tbl-explore-more-site-header ">
+                        <div class="header-container fluid-wrapper " id="scroll1">
+                            
+                            <div class="header-background"></div>
+                            <div class="header " id="scroll2">
+                                <a class="header-logo" href="https://apnews.com/">
+                                    <img src="//cdn.taboola.com/static/87/879714ef-95c4-4d70-a731-c26c37dce99b.png" alt="AP News">
+                                </a>
+                                <div class="header-title title ">AP NEWS</div>
+                                <div class="optional-header-title content"></div>
+                            </div>
+                            <div class="header-navigation-utilities headerNavigationUtilities-0-2-1 -ismobile">
+                                <div class="header-navigation-item radio">
+                                    <div class="Radio">
+                                        <div class="radio-content"><audio class="radio-player"></audio>
+                                            <div class="radio-text">
+                                                <div class="radio-title">AP RADIO</div>
+                                                <div class="radio-subtitle">Update hourly</div>
+                                            </div>
+                                            <div class="radio-control radio-play"><svg class="SvgSprite">
+                                                    <!-- <use xlink:href="/dist/spritemap.svg#sprite-play"></use> -->
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-navigation-item search">
+                                    <div class="nav-action">
+                                        <svg class="SvgSprite">
+                                            <rect class="btn" x="0" y="0" width="40" height="40" onclick="toggleSearch()" />
+                                            <!-- <use xlink:href="/dist/spritemap.svg#sprite-search"></use> -->
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="header-navigation-item sections">
+                                    <button type="button" class="hamburger hamburger--collapse " onclick="toggleMenu()" id="1">
+                                        <span class="header-navigation-item-section-text">Sections</span>
+                                        <span class="hamburger-box">
+                                            <span class="hamburger-inner"></span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="header-navigation-container">
+                                <nav class="header-navigation-wrapper">
+                                    <ul class="header-navigation fluid-wrapper">
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/us-news?utm_source=apnewsnav&amp;utm_medium=navigation">U.S. News</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/world-news?utm_source=apnewsnav&amp;utm_medium=navigation">World News</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/politics?utm_source=apnewsnav&amp;utm_medium=navigation">Politics</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/sports?utm_source=apnewsnav&amp;utm_medium=navigation">Sports</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/entertainment?utm_source=apnewsnav&amp;utm_medium=navigation">Entertainment</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/business?utm_source=apnewsnav&amp;utm_medium=navigation">Business</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/technology?utm_source=apnewsnav&amp;utm_medium=navigation">Technology</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/health?utm_source=apnewsnav&amp;utm_medium=navigation">Health</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/science?utm_source=apnewsnav&amp;utm_medium=navigation">Science</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/oddities?utm_source=apnewsnav&amp;utm_medium=navigation">Oddities</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/lifestyle?utm_source=apnewsnav&amp;utm_medium=navigation">Lifestyle</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/photography?utm_source=apnewsnav&amp;utm_medium=navigation">Photography</a></li>
+                                        <li class="header-navigation-item"><a class="topic-link"
+                                                href="/hub/videos?utm_source=apnewsnav&amp;utm_medium=navigation">Videos</a></li>
+                                    </ul>
+                                    <div class="header-navigation-utilities headerNavigationUtilities-0-2-1 -isdesktop">
+                                        <div class="header-navigation-item radio"><span class="nav-action">Listen</span>
+                                            <div class="Radio">
+                                                <div class="radio-content">
+                                                    <audio class="radio-player"></audio>
+                                                    <div class="radio-text">
+                                                        <div class="radio-title">AP RADIO</div>
+                                                        <div class="radio-subtitle">Update hourly</div>
+                                                    </div>
+                                                    <div class="radio-control radio-play">
+                                                        <svg class="SvgSprite">
+                                                            <!-- <use xlink:href="/dist/spritemap.svg#sprite-play"></use> -->
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="header-navigation-item search">
+                                            <div class="nav-action">
+                                                <svg class="SvgSprite">
+                                                    <rect class="btn" x="0" y="0" width="40" height="40" onclick="toggleSearch()" />
+                                                    <!-- <use xlink:href="/dist/spritemap.svg#sprite-search"></use> -->
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="header-navigation-item sections">
+                                            <button type="button" class="hamburger hamburger--collapse " onclick="toggleMenu()" id="1">
+                                                <span class="header-navigation-item-section-text">Sections</span>
+                                                <span class="hamburger-box">
+                                                    <span class="hamburger-inner"></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="topicsDropdown-0-2-4 TopicsDropdown" id="mydropdown">
+                            <div class="fluid-wrapper dropdownWrapper-0-2-5" id="mydropdown2">
+                                <ol class="dropdown-0-2-7 dropdown">
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link"
+                                            href="/hub/ap-top-news?utm_source=apnewsnav&amp;utm_medium=sections">AP Top News
+                                        </a>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link"
+                                            href="/hub/us-news?utm_source=apnewsnav&amp;utm_medium=sections">U.S. News
+                                        </a>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/world-news?utm_source=apnewsnav&amp;utm_medium=sections">World News</a>
+                                        <span class="child-tags childTags-0-2-10">
+                                            <a class="childList-0-2-11" href="/hub/africa?utm_source=apnewsnav&amp;utm_medium=sections">Africa</a>
+                                            <a class="childList-0-2-11" href="/hub/asia-pacific?utm_source=apnewsnav&amp;utm_medium=sections">Asia Pacific</a>
+                                            <a class="childList-0-2-11" href="/hub/australia?utm_source=apnewsnav&amp;utm_medium=sections">Australia</a>
+                                            <a class="childList-0-2-11" href="/hub/europe?utm_source=apnewsnav&amp;utm_medium=sections">Europe</a>
+                                            <a class="childList-0-2-11" href="/hub/latin-america?utm_source=apnewsnav&amp;utm_medium=sections">Latin America</a>
+                                            <a class="childList-0-2-11" href="/hub/middle-east?utm_source=apnewsnav&amp;utm_medium=sections">Middle East</a>
+                                        </span>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/politics?utm_source=apnewsnav&amp;utm_medium=sections">Politics</a>
+                                        <span class="child-tags childTags-0-2-10">
+                                            <a class="childList-0-2-11" href="/hub/joe-biden?utm_source=apnewsnav&amp;utm_medium=sections">President Biden</a>
+                                            <a class="childList-0-2-11" href="/hub/2022-midterm-elections?utm_source=apnewsnav&amp;utm_medium=sections">Midterm elections</a>
+                                            <a class="childList-0-2-11" href="/hub/united-states-congress?utm_source=apnewsnav&amp;utm_medium=sections">Congress</a>
+                                            <a class="childList-0-2-11" href="/hub/us-supreme-court?utm_source=apnewsnav&amp;utm_medium=sections">U.S. Supreme Court</a>
+                                        </span>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/sports?utm_source=apnewsnav&amp;utm_medium=sections">Sports</a>
+                                        <span class="child-tags childTags-0-2-10">
+                                            <a class="childList-0-2-11" href="/hub/mlb?utm_source=apnewsnav&amp;utm_medium=sections">MLB</a>
+                                            <a class="childList-0-2-11" href="/hub/nba?utm_source=apnewsnav&amp;utm_medium=sections">NBA Playoffs</a>
+                                            <a class="childList-0-2-11" href="/hub/nhl?utm_source=apnewsnav&amp;utm_medium=sections">NHL Playoffs</a>
+                                            <a class="childList-0-2-11" href="/hub/nfl?utm_source=apnewsnav&amp;utm_medium=sections">NFL</a>
+                                        </span>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/entertainment?utm_source=apnewsnav&amp;utm_medium=sections">Entertainment</a>
+                                        <span class="child-tags childTags-0-2-10">
+                                            <a class="childList-0-2-11" href="/hub/film-reviews?utm_source=apnewsnav&amp;utm_medium=sections">Film Reviews</a>
+                                            <a class="childList-0-2-11" href="/hub/movies?utm_source=apnewsnav&amp;utm_medium=sections">Movies</a>
+                                            <a class="childList-0-2-11" href="/hub/music?utm_source=apnewsnav&amp;utm_medium=sections">Music</a>
+                                            <a class="childList-0-2-11" href="/hub/television?utm_source=apnewsnav&amp;utm_medium=sections">Television</a>
+                                            <a class="childList-0-2-11" href="/hub/fashion?utm_source=apnewsnav&amp;utm_medium=sections">Fashion</a>
+                                        </span>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/business?utm_source=apnewsnav&amp;utm_medium=sections">Business</a>
+                                        <span class="child-tags childTags-0-2-10">
+                                            <a class="childList-0-2-11" href="/hub/economy?utm_source=apnewsnav&amp;utm_medium=sections">Economy</a>
+                                            <a class="childList-0-2-11" href="/hub/financial-markets?utm_source=apnewsnav&amp;utm_medium=sections">Financial markets</a>
+                                        </span>
+                                    </li>
+                                    <hr class="horizontalLine-0-2-13">
+                                    <li class="dropdownItem-0-2-8"><a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/technology?utm_source=apnewsnav&amp;utm_medium=sections">Technology</a>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8"><a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/health?utm_source=apnewsnav&amp;utm_medium=sections">Health</a>
+                                        <span class="child-tags childTags-0-2-10"><a class="childList-0-2-11" href="/hub/coronavirus-pandemic?utm_source=apnewsnav&amp;utm_medium=sections">COVID-19</a></span>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <a class="parentTagName-0-2-9 removeUnderline-0-2-14 topic-link" href="/hub/science?utm_source=apnewsnav&amp;utm_medium=sections">Science</a>
+                                    </li>
+                                    <li class="dropdownItem-0-2-8">
+                                        <span class="parentTagName-0-2-9">More</span>
+                                        <span class="moreList-0-2-12">
+                                            <span class="childTags-0-2-10 isMore">
+                                                <a class="childList-0-2-11" href="/hub/ap-fact-check?utm_source=apnewsnav&amp;utm_medium=sections">AP Fact Check</a>
+                                                <a class="childList-0-2-11" href="/hub/lifestyle?utm_source=apnewsnav&amp;utm_medium=sections">Lifestyle</a>
+                                                <a class="childList-0-2-11" href="/hub/religion?utm_source=apnewsnav&amp;utm_medium=sections">Religion</a>
+                                                <a class="childList-0-2-11" href="/hub/press-releases?utm_source=apnewsnav&amp;utm_medium=sections">Press Releases</a>
+                                            </span>
+                                            <span class="childTags-0-2-10 isMore">
+                                                <a class="childList-0-2-11" href="/hub/oddities?utm_source=apnewsnav&amp;utm_medium=sections">Oddities</a>
+                                                <a class="childList-0-2-11" href="/hub/photography?utm_source=apnewsnav&amp;utm_medium=sections">Photography</a>
+                                                <a class="childList-0-2-11" href="/hub/travel?utm_source=apnewsnav&amp;utm_medium=sections">Travel</a>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="header-featured-wrapper" id="scroll3">
+                            <ul class="header-featured-topics fluid-wrapper">
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/buffalo-supermarket-shooting?utm_source=apnewsnav&amp;utm_medium=featured">Buffalo supermarket shooting</a>
+                                </li>
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/2022-midterm-elections?utm_source=apnewsnav&amp;utm_medium=featured">Midterm elections</a>
+                                </li>
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/coronavirus-pandemic?utm_source=apnewsnav&amp;utm_medium=featured">COVID-19</a>
+                                </li>
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/russia-ukraine?utm_source=apnewsnav&amp;utm_medium=featured">Russia-Ukraine war</a>
+                                </li>
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/cannes-film-festival?utm_source=apnewsnav&amp;utm_medium=featured">Cannes Film Festival</a>
+                                </li>
+                                <li class="header-featured-item">
+                                    <a class="featured-link" href="/hub/trending-news?utm_source=apnewsnav&amp;utm_medium=featured">Trending News</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search-wrapper">
+                            <div class="SearchPopover" id="search">
+                                <div class="inner"><input class="input" placeholder="Search" value=""><button
+                                        class="Component-button-0-2-15"><span>Search</span>
+                                        <!-- <svg class="SvgSprite Component-arrow-0-2-17">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-arrow"></use>
+                                        </svg> -->
+                                    </button>
+                                    <section class="search-results"></section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-placeholder "></div>
+                <div class="Body">
+                    <div class="Content WireStory fluid-wrapper with-lead">
+                        <div class="Leaderboard leaderboard-0-2-18">
+                            <div class="dfpSlot-0-2-19">
+                                <div class="Component-adTitle-0-2-22">ADVERTISEMENT</div>
+                                <div class="Component-placeholderWrapper-0-2-25">
+                                    <div class="Component-visualPlaceholder-0-2-23 dfpSlotVisualPlaceholder-0-2-20"></div>
+                                    <div data-key="ad-placeholder" id="div-gpt-ad_site_article_leaderboard" class="DFPSlot Component-ad-0-2-21"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="SocialShare Component-root-0-2-28 tablet-view"><a
+                                href="https://facebook.com/dialog/share?app_id=870613919693099&amp;display=popup&amp;href=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900"
+                                target="_blank" rel="noopener noreferrer" class="Component-root-0-2-31"><svg class="SvgSprite">
+                                    <use xlink:href="/dist/spritemap.svg#sprite-share-facebook"></use>
+                                </svg></a><a
+                                href="https://twitter.com/intent/tweet?url=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900"
+                                target="_blank" rel="noopener noreferrer" class="Component-root-0-2-32"><svg class="SvgSprite">
+                                    <use xlink:href="/dist/spritemap.svg#sprite-share-twitter"></use>
+                                </svg></a><a
+                                href="mailto:?subject=EU rushes out $300 billion roadmap to ditch Russian energy&amp;body=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900"
+                                class="Component-root-0-2-33"><svg class="SvgSprite">
+                                    <use xlink:href="/dist/spritemap.svg#sprite-share-email"></use>
+                                </svg></a>
+                            <div class="Component-root-0-2-34 Component-copyLink-0-2-29 Component-rootBig-0-2-35"><textarea tabindex="-1"
+                                    class="Component-area-0-2-37">https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900</textarea>
+                                <div class="Component-message-0-2-36">Click to copy</div><svg class="SvgSprite">
+                                    <use xlink:href="/dist/spritemap.svg#sprite-share-link"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ContentView-LeftRail">
+                            <div></div>
+                            <div class="sticky-part">
+                                <div class="SocialShare Component-root-0-2-28">
+                                    <a href="https://facebook.com/dialog/share?app_id=870613919693099&amp;display=popup&amp;href=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900" target="_blank" rel="noopener noreferrer" class="Component-root-0-2-31">
+                                        <!-- <svg class="SvgSprite">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-share-facebook"></use>
+                                        </svg> -->
+                                    </a>
+                                    <a href="https://twitter.com/intent/tweet?url=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900" target="_blank" rel="noopener noreferrer" class="Component-root-0-2-32">
+                                        <!-- <svg class="SvgSprite">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-share-twitter"></use>
+                                        </svg> -->
+                                    </a>
+                                    <a href="mailto:?subject=EU rushes out $300 billion roadmap to ditch Russian energy&amp;body=https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900" class="Component-root-0-2-33">
+                                        <!-- <svg class="SvgSprite">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-share-email"></use>
+                                        </svg> -->
+                                    </a>
+                                    <div class="Component-root-0-2-34 Component-copyLink-0-2-29 Component-rootBig-0-2-35">
+                                        <textarea tabindex="-1" class="Component-area-0-2-37">https://apnews.com/article/russia-ukraine-climate-ursula-von-der-leyen-european-union-fca230025ac78905c3d025701ae30900</textarea>
+                                        <div class="Component-message-0-2-36">Click to copy</div>
+                                        <!-- <svg class="SvgSprite">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-share-link"></use>
+                                        </svg> -->
+                                    </div>
+                                </div>
+                                <div class="RelatedTopics">
+                                    <div class="heading">Related topics</div>
+                                    <ul class="tag-list">
+                                        <li class="tag"><a data-key="related-tag" href="/hub/russia-ukraine">Russia-Ukraine war</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/climate">Climate</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/brussels">Brussels</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/ursula-von-der-leyen">Ursula Von Der Leyen</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/european-union">European Union</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/european-commission">European Commission</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/environment-and-nature">Environment and nature</a></li>
+                                        <li class="tag"><a data-key="related-tag" href="/hub/government-and-politics">Government and politics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CardHeadline">
+                            <div class="Component-headline-0-2-41" data-key="card-headline">
+                                <h1 class="Component-heading-0-2-42">EU rushes out $300 billion roadmap to ditch Russian energy</h1>
+                            </div>
+                            <div class="Component-signature-0-2-44">
+                                <span class="Timestamp Component-root-0-2-47 Component-timestamp-0-2-46"
+                                    data-key="timestamp" data-source="2022-05-18T13:53:58Z"
+                                    title="2022-05-18 13:53:58 - Wed May 18 2022 10:53:58 GMT-0300 (Argentina Standard Time)">yesterday</span>
+                            </div>
+                            <div class="apLine-0-2-48 -apLine"></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="LeadFeature Component-leadFeature-0-2-49">
+                            <div class="placeholder-0-2-57 undefined" data-key="media-placeholder">
+                                <img class="image-0-2-58"
+                                    src="https://storage.googleapis.com/afs-prod/media/181163cc8e9e46e1a5f44de2dfb54b19/800.jpeg"
+                                    alt="European Commission President Ursula von der Leyen announces a joint statement with Japanese Prime Minister Fumio Kishida and European Council President Charles Michel at the prime minister's official residence in Tokyo Thursday, May 12, 2022. (Yoshikazu Tsuno/Pool Photo via AP)">
+                                </div>
+                                <div class="count-caption Component-countCaption-0-2-50">
+                                    <div class="Component-imageCaption-0-2-56">
+                                        <div class="embed-caption Component-root-0-2-59 Component-embedCaption-0-2-53" data-key="embed-caption">
+                                            European Commission President Ursula von der Leyen announces a joint statement with Japanese Prime
+                                            Minister Fumio Kishida and European Council President Charles Michel at the prime minister's official
+                                            residence in Tokyo Thursday, May 12, 2022. (Yoshikazu Tsuno/Pool Photo via AP)
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="Article tbl-forkorts-article tbl-forkorts-article-active" data-key="article">
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">BRUSSELS (AP) — The European Union’s executive arm moved
+                                Wednesday to jump-start plans for the 27-nation bloc to abandon Russian energy amid the <a class=""
+                                    href="/hub/russia-ukraine">Kremlin’s war in Ukraine</a>, proposing a nearly 300 billion-euro ($315 billion)
+                                package that includes more efficient use of fuels and faster rollout of renewable power.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The European Commission’s investment initiative is meant to help
+                                the 27 EU countries start <a class=""
+                                    href="/article/russia-ukraine-africa-government-and-politics-middle-east-61d000b572a2a5a078ca3372ea9a6034">weaning
+                                    themselves off Russian fossil fuels</a> this year. The goal is to deprive Russia, the EU’s main supplier of
+                                oil, natural gas and coal, of tens of billions in revenue and strengthen EU climate policies.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">“We are taking our ambition to yet another level to make sure
+                                that we become independent from Russian fossil fuels as quickly as possible,” European Commission President
+                                Ursula von der Leyen said in Brussels when announcing the package, dubbed REPowerEU.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">With no end in sight to Russia’s war in Ukraine and <a class=""
+                                    href="/article/russia-ukraine-climate-boris-johnson-business-germany-e13e47b5c3784fa26e61d49502797295">European
+                                    energy security shaken</a>, the EU is rushing to align its geopolitical and climate interests for the coming
+                                decades. It comes amid troubling signs that have raised concerns about <a class=""
+                                    href="/article/russia-ukraine-putin-business-milan-moscow-aa9c46e19ba99c30dcf3fb427202ebec">energy supplies
+                                    that the EU relies on</a> and have no quick replacements for, including <a class=""
+                                    href="/article/russia-ukraine-putin-business-europe-poland-88f76aaba3313f2a243defc0ee98fb9c">Russia cutting
+                                    off member nations Poland and Bulgaria</a> after they refused a demand to <a class=""
+                                    href="/article/russia-ukraine-putin-business-poland-europe-6d4aeea5cbe7c9e94ffd69a548fa5f3d">pay for natural
+                                    gas in rubles</a>.</p>
+                            <div class="Component-hubPeekEmbed-0-2-68 HubPeek noBorderBottom-0-2-70 compressedEmbed-0-2-71">
+                                <div data-key="feed-card-hub-peak" class="hubPeekContainerWide-0-2-73">
+                                    <div class="title-0-2-74"><a class="blueTitle-0-2-75 blueTitle-4-0-2-123 overrideArticle"
+                                            href="/hub/russia-ukraine">
+                                            <h3 class="title-0-2-74">Russia-Ukraine war</h3>
+                                        </a></div>
+                                    <div class="columnLayout-0-2-79">
+                                        <li class="listItem-0-2-93"><a class="wireStoryContainer-0-2-84 noImage-0-2-85"
+                                                href="/article/russia-ukraine-politics-japan-china-53f916cf2c9cfcaf04346de8dc7d9e1a">
+                                                <div class="imageContainer-0-2-86"></div>
+                                                <div class="titleContainer-0-2-87">
+                                                    <div class="title-0-2-88 overrideArticle">
+                                                        <h4 class="headline-0-2-91">Wall Street nears bear market at the end of a bruising week
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li class="listItem-0-2-93"><a class="wireStoryContainer-0-2-84 noImage-0-2-85"
+                                                href="/article/russia-ukraine-biden-poland-2577a450b3cb18f325d61e9920e2593d">
+                                                <div class="imageContainer-0-2-86"></div>
+                                                <div class="titleContainer-0-2-87">
+                                                    <div class="title-0-2-88 overrideArticle">
+                                                        <h4 class="headline-0-2-91">Yellen's global tax plan meets resistance abroad and at home
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <div class="divider-0-2-77"></div>
+                                        <div class="divider-0-2-77"></div>
+                                        <li class="listItem-0-2-93"><a class="wireStoryContainer-0-2-84 noImage-0-2-85"
+                                                href="/article/russia-ukraine-sports-belarus-mens-tennis-4bc8619e87a5cc1cdfa4d5eaac9fef67">
+                                                <div class="imageContainer-0-2-86"></div>
+                                                <div class="titleContainer-0-2-87">
+                                                    <div class="title-0-2-88 overrideArticle">
+                                                        <h4 class="headline-0-2-91">Wimbledon's Russia ban prompts tours to cut ranking points
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                        <li class="listItem-0-2-93"><a class="wireStoryContainer-0-2-84 noImage-0-2-85"
+                                                href="/article/russia-ukraine-fb4e83e75e0135aecd6ed2803868b78d">
+                                                <div class="imageContainer-0-2-86"></div>
+                                                <div class="titleContainer-0-2-87">
+                                                    <div class="title-0-2-88 overrideArticle">
+                                                        <h4 class="headline-0-2-91">AP PHOTOS: Shattered lives and recovery in Ukraine war</h4>
+                                                    </div>
+                                                </div>
+                                            </a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Component-dfp-0-2-64">
+                                <div class="Component-adTitle-0-2-22">ADVERTISEMENT</div>
+                                <div class="Component-placeholderWrapper-0-2-25">
+                                    <div class="Component-visualPlaceholder-0-2-23"></div>
+                                    <div data-key="ad-placeholder" id="div-gpt-ad_site_article_midarticle1" class="DFPSlot Component-ad-0-2-21">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The bloc’s dash to ditch Russian energy stems from a combination
+                                of voluntary and mandatory actions. Both reflect the political discomfort of helping fund Russia’s military
+                                campaign in a country that neighbors the EU and wants to join the bloc.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">An <a class=""
+                                    href="/article/russia-ukraine-business-european-commission-europe-european-union-15aaf010196af8e66bc6deac13ceb26f">EU
+                                    ban on coal from Russia</a> is due to start in August, and the bloc has pledged to try to reduce demand for
+                                Russian gas by two-thirds by year’s end. Meanwhile, a <a class=""
+                                    href="/article/russia-ukraine-business-global-trade-moscow-europe-c6c7a1960b88c363ce5f3eaf0ea07dcd">proposed
+                                    EU oil embargo</a> has <a class=""
+                                    href="/article/russia-ukraine-business-global-trade-europe-budapest-d53daf0475b40ca3478cfc4f858ef015">hit a
+                                    roadblock from Hungary</a> and other landlocked countries that worry about the cost of switching to
+                                alternative sources.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">In a bid to swing Hungary behind the oil phaseout, the REPowerEU
+                                package expects oil investment funding of around 2 billion euros for member <a class=""
+                                    href="/article/russia-ukraine-covid-business-health-europe-48b3b863fbcf683bb11a43b296ca980b">nations highly
+                                    dependent on Russian oil</a>.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Energy savings and renewables form the cornerstones of the
+                                package, which would be funded mainly by an economic stimulus program put in place to help member countries
+                                overcome the slump triggered by the coronavirus pandemic.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The European Commission said the price tag for abandoning
+                                Russian fossil fuels completely by a 2027 target date is 210 billion euros. Its package includes 56 billion
+                                euros for energy efficiency and 86 billion euros for renewables.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Von der Leyen cited a total funding pot of 72 billion euros in
+                                grants and 225 billion euros for loans. </p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The European Commission also proposed ways to streamline the
+                                approval processes in EU countries for renewable projects, which can take up to a decade to get through red
+                                tape. The commission said approval times need to fall to as little as a year or less.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">It put forward a specific plan on solar energy, seeking to
+                                double photovoltaic capacity by 2025 and pushing for a phased-in obligation to install solar panels on new
+                                buildings. </p>
+                            <div class="Component-dfp-0-2-64">
+                                <div class="Component-adTitle-0-2-22">ADVERTISEMENT</div>
+                                <div class="Component-placeholderWrapper-0-2-25">
+                                    <div class="Component-visualPlaceholder-0-2-23"></div>
+                                    <div data-key="ad-placeholder" id="div-gpt-ad_site_article_midarticle2" class="DFPSlot Component-ad-0-2-21">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Simone Tagliapietra, an energy expert at the Bruegel think tank
+                                in Brussels, called REPowerEU a “jumbo package” whose success will ultimately depend on political will in the
+                                bloc’s national capitals.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">“Most of the actions entailed in the plan require either
+                                national implementation or strong coordination among member states,” Tagliapietra said. “The extent to which
+                                countries really engage is going to be defining.” </p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The German energy think tank Agora Energiewende said the EU’s
+                                plan “gives too little attention to concrete initiatives that <a class=""
+                                    href="/article/russia-ukraine-climate-business-europe-berlin-14940f9aec3fdd35cbd39c99dbf4439f">reduce fossil
+                                    fuel demand in the short term</a> and thereby misses the opportunity to simultaneously enhance Europe’s
+                                energy security and meet Europe’s climate objectives.”</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The group’s research shows rapidly expanding solar, wind parks
+                                and use of heat pumps for low-temperature heat in industry and buildings could be done faster than constructing
+                                new liquefied natural gas terminals or gas infrastructure, said Matthias Buck, its director for Europe.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">The European Commission’s recommendations on short-term national
+                                actions to cut demand for Russian energy coincide with deliberations underway in the bloc since last year on
+                                setting more ambitious EU energy-efficiency and renewable targets for 2030. </p>
+                            <div class="Component-dfp-0-2-64">
+                                <div class="Component-adTitle-0-2-22">ADVERTISEMENT</div>
+                                <div class="Component-placeholderWrapper-0-2-25">
+                                    <div class="Component-visualPlaceholder-0-2-23"></div>
+                                    <div data-key="ad-placeholder" id="div-gpt-ad_site_article_midarticle3" class="DFPSlot Component-ad-0-2-21">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Those targets, being negotiated by the European Parliament and
+                                national governments, are part of the bloc’s commitments to a 55% cut in greenhouse gases by decade’s end,
+                                compared with 1990 emissions, and to climate neutrality by 2050.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Von der Leyen urged the European Parliament and national
+                                governments to deepen the commission’s July proposal for an energy efficiency target of 9% and renewable energy
+                                goal of 40% by 2030. She said those objectives should be 13% and 45%, respectively.</p>
+                            <p class="Component-root-0-2-69 Component-p-0-2-60">Belgium, the Netherlands, Germany and Denmark <a class=""
+                                    href="/article/russia-ukraine-climate-government-and-politics-environment-3f822a955af608fff34ec739ddbce2fd">plan
+                                    to build North Sea wind farms</a> to help cut carbon emissions.</p>
+                            <div class="tbl-read-more-box"><a id="tbl-read-more-box-btn_trc_91554" class="tbl-read-more-btn " href="#">
+                                    Read More
+                        
+                                    <svg class="tbl-read-more-button-arrow" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.85381 0.203525L3.99181 3.06553L1.12981 0.203525C1.00407 0.0820867 0.835672 0.0148905 0.660874 0.0164095C0.486076 0.0179284 0.318868 0.088041 0.195262 0.211646C0.0716568 0.335252 0.00154415 0.50246 2.52017e-05 0.677258C-0.00149374 0.852056 0.0657025 1.02046 0.187141 1.14619L3.52047 4.47953C3.64549 4.60451 3.81503 4.67472 3.99181 4.67472C4.16858 4.67472 4.33812 4.60451 4.46314 4.47953L7.79647 1.14619C7.86015 1.08469 7.91094 1.01113 7.94588 0.929795C7.98081 0.848459 7.99921 0.760979 7.99997 0.67246C8.00074 0.58394 7.98388 0.496154 7.95036 0.414223C7.91683 0.332292 7.86733 0.257857 7.80474 0.195262C7.74214 0.132667 7.66771 0.083165 7.58578 0.0496444C7.50385 0.0161238 7.41606 -0.00074404 7.32754 2.51711e-05C7.23902 0.000794382 7.15154 0.0191852 7.0702 0.0541246C6.98887 0.0890639 6.91531 0.139852 6.85381 0.203525Z"
+                                            fill="#BCBCBC"></path>
+                                    </svg>
+                        
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bellow-article">
+                            <div class="ntv-below-article"></div>
+                            <div>
+                                <script id="92b4559619c6413c88cbd031cb07e195"></script>
+                            </div>
+                            <div>
+                                <div id="Feed - Below Article Thumbnails - No Video" class=" trc_related_container trc_spotlight_widget tbl-feed-container tbl-feed-full-width tbl-feed-frame-NONE render-late-effect" data-feed-container-num="1" data-feed-main-container-id="Feed - Below Article Thumbnails - No Video" data-parent-placement-name="Feed - Below Article Thumbnails - No Video" data-pub-lang="en" observeid="tbl-observe-15">
+                                    <div class=" tbl-feed-header tbl-logo-right-position">
+                                        <div class="tbl-feed-header-logo"></div>
+                                    </div>
+                                    <div id="Feed - Below Article Thumbnails - No Video-sca1" data-batch-num="1" tbl-feed-card=""
+                                        class=" trc_related_container trc_spotlight_widget trc_multi_widget">
+                                        <div class=" trc_multi_widget_container">
+                                            <div class=" trc_related_container trc_spotlight_widget" widget-name="thumbs-feed-01-e-ND">
+                                                <div class="trc_rbox_container">
+                                                    <div>
+                                                        <div id="trc_wrapper_45880" class="trc_rbox thumbs-feed-01-e-ND"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" trc_related_container trc_spotlight_widget" widget-name="organic-thumbnails-feed-r-ND">
+                                                <div class="trc_rbox_container">
+                                                    <div>
+                                                        <div id="trc_wrapper_36945" class="trc_rbox organic-thumbnails-feed-r-ND"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-card-index="1" id="Feed - Below Article Thumbnails - No Video-pl1" data-batch-num="1" tbl-feed-card=""
+                                        class=" trc_related_container trc_spotlight_widget trc_elastic trc_elastic_organic-thumbnails-feed-r-ND  tbl-feed-card  tbl-feed-card "
+                                        data-placement-name="Feed - Below Article Thumbnails - No Video | Card 1" observeid="tbl-observe-17">
+                                        <div class="trc_rbox_container">
+                                            <div>
+                                                <div id="trc_wrapper_70689" class="trc_rbox organic-thumbnails-feed-r-ND trc-content-organic ">
+                                                    <div id="trc_header_70689" class="trc_rbox_header trc_rbox_border_elm">
+                                                        <div class="trc_header_ext"></div><span class="trc_rbox_header_span"></span>
+                                                    </div>
+                                                    <div id="outer_70689" class="trc_rbox_outer">
+                                                        <div id="rbox-t2v" class="trc_rbox_div trc_rbox_border_elm">
+                                                            <div id="internal_trc_70689">
+                                                                <div data-item-id="-5663665712345251677"
+                                                                    data-item-title="Iran Revolutionary Guard colonel is shot dead in Tehran"
+                                                                    data-item-thumb="https://storage.googleapis.com/afs-prod/media/ce7f3ead2aba4968969b91746933da82/1440.jpeg"
+                                                                    data-item-syndicated="false"
+                                                                    class="videoCube trc_spotlight_item origin-undefined thumbnail_top textItem videoCube_1_child trc-first-recommendation trc-spotlight-first-recommendation "
+                                                                    observeid="tbl-observe-18"><a
+                                                                        href="https://apnews.com/article/islamic-state-group-iran-middle-east-tehran-d1fd66f3ae263b4dba4129df6cb43a20"
+                                                                        target="_parent" class=" item-thumbnail-href ">
+                                                                        <div class="thumbBlock_holder"><span class="thumbBlock" style="background-image: url(&quot;https://images-dup.taboola.com/taboola/image/fetch/f_jpg%2Cq_auto%2Ch_834%2Cw_1500%2Cc_fill%2Cg_faces:auto%2Ce_sharpen/https%3A//storage.googleapis.com/afs-prod/media/ce7f3ead2aba4968969b91746933da82/1440.jpeg&quot;);"><span
+                                                                                    class="thumbnail-overlay"></span></span>
+                                                                            <div class="videoCube_aspect"></div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="https://apnews.com/article/islamic-state-group-iran-middle-east-tehran-d1fd66f3ae263b4dba4129df6cb43a20" target="_parent" class=" item-label-href ">
+                                                                        <span class="video-label-box trc-main-label ">
+                                                                            <span class="video-label video-title trc_ellipsis ">
+                                                                                Iran Revolutionary Guard colonel is shot dead in Tehran
+                                                                            </span>
+                                                                                <span class="video-label video-description trc_ellipsis ">TEHRAN, Iran (AP) — A senior member of Iran’s powerful Revolutionary Guard was killed outside his home in Tehran on Sunday by unidentified gunmen on a motorbike, state TV reported. Although the Guard gave only scant detail about the attack that occurred in broad daylight in the heart of Iran's capit
+                                                                            </span>
+                                                                            <span class="video-label video-uploader">
+                                                                                <span class="logoInBranding"></span>
+                                                                                <dt>3 hours ago</dt>
+                                                                            </span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trc_clearer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Component-footer-0-2-94 -footer">
+                    <div class="fluid-wrapper">
+                        <div class="Component-grid-0-2-95">
+                            <nav class="Component-nav-0-2-96">
+                                <div class="Component-title-0-2-102">AP NEWS</div>
+                                <ol class="Component-list-0-2-103">
+                                    <li><a class="topic-link" href="/hub/ap-top-news">Top Stories</a></li>
+                                    <li><a href="/hub/videos">Video</a></li>
+                                    <li><a href="mailto:support@apnews.com" rel="noopener noreferrer">Contact Us</a></li>
+                                    <li><a href="/accessibility-statement">Accessibility Statement</a></li>
+                                    <li><button class="optanon-show-settings">Cookie Settings</button></li>
+                                </ol>
+                            </nav>
+                            <nav class="Component-apps-0-2-97">
+                                <div class="Component-title-0-2-102">Download AP NEWS</div>
+                                <div class="Component-downloadDescription-0-2-104">Connect with the definitive source for global and
+                                    local news</div>
+                                <div class="Component-list-0-2-106">
+                                    <a href="https://itunes.apple.com/us/app/ap-news/id364677107" target="_blank" rel="noopener noreferrer"
+                                        class="Component-item-0-2-107 Component-ios-0-2-108"><svg class="SvgSprite">
+                                            <use xlink:href="/dist/spritemap.svg#sprite-app-store"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=mnn.Android" target="_blank" rel="noopener noreferrer"
+                                        class="Component-item-0-2-107 Component-android-0-2-109"><img src="/en_badge_web_generic.png" class="SvgSprite"
+                                            alt="Google Play icon">
+                                    </a>
+                                </div>
+                            </nav>
+                            <nav class="Component-moreFromAp-0-2-98">
+                                <div class="Component-title-0-2-102">More from AP</div>
+                                <ol class="Component-list-0-2-103">
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.ap.org">ap.org</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://insights.ap.org/">AP Insights</a>
+                                    </li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://blog.ap.org/">AP Definitive Source
+                                            Blog</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://apimagesblog.com/">AP Images
+                                            Spotlight</a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.ap.org/explore/">AP Explore</a>
+                                    </li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://www.ap.org/books/">AP Books</a></li>
+                                </ol>
+                            </nav>
+                            <nav class="Component-followAp-0-2-99">
+                                <div class="Component-title-0-2-102">Follow AP</div>
+                                <ol class="Component-list-0-2-110">
+                                    <li class="Component-item-0-2-111"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://twitter.com/AP" class="Component-icon-0-2-112"><svg class="SvgSprite">
+                                                <use xlink:href="/dist/spritemap.svg#sprite-social-twitter"></use>
+                                            </svg></a></li>
+                                    <li class="Component-item-0-2-111"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.facebook.com/APNews" class="Component-icon-0-2-112"><svg
+                                                class="SvgSprite">
+                                                <use xlink:href="/dist/spritemap.svg#sprite-social-facebook"></use>
+                                            </svg></a></li>
+                                    <li class="Component-item-0-2-111"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.youtube.com/user/AssociatedPress" class="Component-icon-0-2-112"><svg
+                                                class="SvgSprite">
+                                                <use xlink:href="/dist/spritemap.svg#sprite-social-youtube"></use>
+                                            </svg></a></li>
+                                    <li class="Component-item-0-2-111"><a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.linkedin.com/company/associated-press" class="Component-icon-0-2-112"><svg
+                                                class="SvgSprite">
+                                                <use xlink:href="/dist/spritemap.svg#sprite-social-linkedin"></use>
+                                            </svg></a></li>
+                                </ol>
+                            </nav>
+                            <div class="Component-divider-0-2-100 Component-divider-0-2-105"></div>
+                            <div class="Component-legalStuff-0-2-101 Component-legalStuff-0-2-113">
+                                <nav class="Component-legalStuffNav-0-2-114">
+                                    <div class="Component-title-0-2-117 Component-spaceBelow-0-2-120">The Associated Press</div>
+                                    <ol class="Component-list-0-2-115">
+                                        <li class="Component-listItem-0-2-116"><a target="_blank" rel="noopener noreferrer"
+                                                href="https://www.ap.org/about/">About</a></li>
+                                        <li class="Component-listItem-0-2-116"><a target="_blank" rel="noopener noreferrer"
+                                                href="https://www.ap.org/contact-us/">Contact</a></li>
+                                        <li class="Component-listItem-0-2-116"><a target="_blank" rel="noopener noreferrer"
+                                                href="http://aphelp.ap.org">Customer Support</a></li>
+                                        <li class="Component-listItem-0-2-116"><a target="_blank" rel="noopener noreferrer"
+                                                href="https://www.ap.org/careers/">Careers</a></li>
+                                        <li class="Component-listItem-0-2-116"><a href="/termsofservice">Terms &amp; Conditions</a></li>
+                                        <li class="Component-listItem-0-2-116"><a href="/privacystatement">Privacy</a></li>
+                                    </ol>
+                                </nav>
+                                <div class="Component-copyright-0-2-118"><span
+                                        class="Component-span-0-2-119 Component-spaceBelow-0-2-120 Component-spaceAbove-0-2-121">All
+                                        contents © copyright 2022 The Associated Press.</span><span
+                                        class="Component-span-0-2-119 Component-spaceBelow-0-2-120"> All rights reserved.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>
